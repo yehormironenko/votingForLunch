@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="file" class="ch.qos.logback.core.FileAppender">
+        <encoder>
+            <pattern>%date %-5level %logger{50}.%M:%L - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.graduation.voting" level="INFO"/>
+
+    <root level="info">
+        <appender-ref ref="file"/>
+    </root>
+
+</configuration>
